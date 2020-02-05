@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif; 
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 0px;
+  text-align: center;
+  font-size: 12px;
+  color: blue;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: right;
+  width: 10%;
+  height: 20px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: Arial;
+  padding: 0;
+}
+
+article {
+  float:right;
+  padding: 20px;
+  width: 70%;
+  background-color: onl1f1f1y;
+  height: 500px; /* onl1f1f1y for demonstration, should be removed */
+}
+
+/* Clear floats after the columns*/ 
+section:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color:auto;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 1000px) {
+  nav, article {
+    width: 100%;
+    height: 10%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>REJOANUL ISLAM</h2>
+
+<header>
+  <h2>Bangladesh</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Dhaka</a></li>
+      <li><a href="#">Gazipur</a></li>
+      <li><a href="#">tongi</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Dhaka</h1>
+    <p>ঢাকা(ইংরেজি:Dhaka, পূর্বে Dacca ছিল) দক্ষিণ এশিয়ার রাষ্ট্র বাংলাদেশের রাজধানী ও বৃহত্তম শহর। প্রশাসনিকভাবে এটি দেশটির ঢাকা বিভাগের প্রধান শহর। ভৌগোলিকভাবে এটি বাংলাদেশের মধ্যভাগে বুড়িগঙ্গা নদীর উত্তর তীরে একটি সমতল এলাকাতে অবস্থিত। ঢাকা একটি অতিমহানগরী (মেগাশহর); ঢাকা মহানগরী এলাকার জনসংখ্যা প্রায় ১ কোটি ৫০ লক্ষ।[৪] জনসংখ্যার বিচারে এটি দক্ষিণ এশিয়ার চতুর্থ বৃহত্তম শহর (দিল্লি, করাচি ও মুম্বইয়ের পরেই) এবং সমগ্র বিশ্বের নবম বৃহত্তম[৫] শহর। জনঘনত্বের বিচারে ঢাকা বিশ্বের সবচেয়ে ঘনবসতিপূর্ণ মহানগরী; ১৩৪ বর্গমাইল আয়তনের এই শহরে প্রতি বর্গমাইল এলাকায় ১ লক্ষ ১৫ হাজার লোকের বাস।[৬]</p>
+    
+  </article>
+</section>
+
+<footer>
+  <p>Dhaka</p>
+</footer>
+
+</body>
+</html>
